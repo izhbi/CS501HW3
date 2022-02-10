@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pastaTextView"
+        style="@style/DishLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:text="Pasta - 800 calories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishesTextView" />
+
+    <TextView
+        android:id="@+id/burgerTextView"
+        style="@style/DishLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Burger - 600 calories"
+        app:layout_constraintStart_toStartOf="@+id/pastaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/pastaTextView" />
+
+    <TextView
+        android:id="@+id/friesTextView"
+        style="@style/DishLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="French Fries - 400 calories"
+        app:layout_constraintStart_toStartOf="@+id/burgerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/burgerTextView" />
+
+    <TextView
+        android:id="@+id/bagelTextView"
+        style="@style/DishLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bagel - 500 calories"
+        app:layout_constraintStart_toStartOf="@+id/friesTextView"
+        app:layout_constraintTop_toBottomOf="@+id/friesTextView" />
+
+    <TextView
+        android:id="@+id/soupTextView"
+        style="@style/DishLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Soup - 350 calories"
+        app:layout_constraintStart_toStartOf="@+id/bagelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/bagelTextView" />
+
+    <EditText
+        android:id="@+id/pastaEditText"
+        style="@style/TextFieldStyle"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="80dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/pastaTextView"
+        app:layout_constraintStart_toEndOf="@+id/pastaTextView"
+        app:layout_constraintTop_toTopOf="@+id/pastaTextView" />
+
+    <EditText
+        android:id="@+id/burgerEditText"
+        style="@style/TextFieldStyle"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/burgerTextView"
+        app:layout_constraintStart_toStartOf="@+id/pastaEditText"
+        app:layout_constraintTop_toTopOf="@+id/burgerTextView" />
+
+    <EditText
+        android:id="@+id/friesEditText"
+        style="@style/TextFieldStyle"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/friesTextView"
+        app:layout_constraintStart_toStartOf="@+id/burgerEditText"
+        app:layout_constraintTop_toTopOf="@+id/friesTextView" />
+
+    <EditText
+        android:id="@+id/bagelEditText"
+        style="@style/TextFieldStyle"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/bagelTextView"
+        app:layout_constraintStart_toStartOf="@+id/friesEditText"
+        app:layout_constraintTop_toTopOf="@+id/bagelTextView" />
+
+    <EditText
+        android:id="@+id/soupEditText"
+        style="@style/TextFieldStyle"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/soupTextView"
+        app:layout_constraintStart_toStartOf="@+id/bagelEditText"
+        app:layout_constraintTop_toTopOf="@+id/soupTextView" />
+
+    <TextView
+        android:id="@+id/dishesTextView"
+        style="@style/TitleLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Dishes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/servingsTextView"
+        style="@style/TitleLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servings"
+        app:layout_constraintStart_toStartOf="@+id/pastaEditText"
+        app:layout_constraintTop_toTopOf="@+id/dishesTextView" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total Calories:"
+        app:layout_constraintEnd_toEndOf="@+id/soupEditText"
+        app:layout_constraintTop_toBottomOf="@+id/soupEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

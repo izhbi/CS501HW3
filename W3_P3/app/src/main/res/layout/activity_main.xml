@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/cSeekBar"
+        android:layout_width="180dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cTextView" />
+
+    <SeekBar
+        android:id="@+id/fSeekBar"
+        android:layout_width="180dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fTextView" />
+
+    <TextView
+        android:id="@+id/cTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/celsius"
+        app:layout_constraintStart_toStartOf="@+id/cSeekBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/fahrenheit"
+        app:layout_constraintStart_toStartOf="@+id/fSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/cSeekBar" />
+
+    <TextView
+        android:id="@+id/msgTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/msg_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fSeekBar" />
+
+    <TextView
+        android:id="@+id/cValTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="20 C"
+        app:layout_constraintBottom_toBottomOf="@+id/cSeekBar"
+        app:layout_constraintStart_toEndOf="@+id/cSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/cSeekBar" />
+
+    <TextView
+        android:id="@+id/fValTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="68 F"
+        app:layout_constraintBottom_toBottomOf="@+id/fSeekBar"
+        app:layout_constraintStart_toEndOf="@+id/fSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/fSeekBar"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

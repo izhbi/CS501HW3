@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="celsius">la Celsius</string>
+    <string name="fahrenheit">la Fahrenheit</string>
+    <string name="msg_default">Message intéressant</string>
+    <string name="msg_cold">J\'aimerais qu\'il fasse plus chaud.</string>
+    <string name="msg_hot">J\'aimerais qu\'il fasse plus froid.</string>
+</resources>

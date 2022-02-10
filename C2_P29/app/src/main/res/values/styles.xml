@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleLabelStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="DishLabelStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="TextFieldStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:textSize">10dp</item>
+        <item name="android:hint"># of servings</item>
+        <item name="android:textColor">#3C3C3C</item>
+        <item name="android:textColorHint">#9A9A9A</item>
+    </style>
+</resources>
